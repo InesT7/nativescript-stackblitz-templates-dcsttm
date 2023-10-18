@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    
+    <GridLayout rows="auto" columns="auto" width="100" height="100" class="menu">
+    <StackLayout row="0" col="0" class="line"></StackLayout>
+    <StackLayout row="0" col="0" class="line"></StackLayout>
+    <StackLayout row="0" col="0" class="line"></StackLayout>
+</GridLayout>
+
+
+
+    <ActionBar title="About Me" icon="" />
+    <StackLayout class="p-4">
+        <Label text="Ines T" class="text-3xl text-center"  /> 
+        <StackLayout height="20"></StackLayout>  <!-- This creates a space of 20 dip (device-independent pixels) -->
+        <Button text="About Me" tap="{{ onTap}}" class="-primary" />
+        <Button text="Skills" tap="{{ onTap }}" class="-primary"/>
+        <Button text="Contact Me" tap="{{ onTap}}" class="-primary"/>
+        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+    </StackLayout>
+</Page>
